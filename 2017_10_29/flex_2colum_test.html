@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>两栏布局</title>
+	<style>
+		body{
+			min-width: 499px;
+		}
+		.container{
+			display: flex;
+		}
+		.left{
+			height: 400px;
+			background: black;
+			order: 0;
+			flex:1 0 499px;
+		}
+		.right{
+			height: 400px;
+			background: yellow;
+			order: 1;
+			flex:1 0 277px;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="left"></div>
+		<div class="right"></div>
+	</div>
+</body>
+</html>

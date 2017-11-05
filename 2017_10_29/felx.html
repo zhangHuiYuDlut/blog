@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>flex</title>
+	<style>
+		body{
+			min-width: 600px;
+		}
+		.container{
+			display: flex;
+
+		}
+		.main{
+			height: 400px;
+			background: yellow;
+			flex-grow: 1;
+			order: 0;
+			
+			}
+		.left{
+			height: 400px;
+			background: black;
+			order: -1;
+			flex: 0 1 200px;
+		}
+		.right{
+			height: 400px;
+			background: red;
+			order: 1;
+			flex: 0 1 120px;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="main"></div>
+		<div class="left"></div>
+		<div class="right"></div>
+	</div>
+	
+</body>
+</html>
